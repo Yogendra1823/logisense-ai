@@ -37,7 +37,7 @@ tr:hover td { background: #f8f9fa; }
 <body>
 <div class="nav">
   <h1>LogiSense AI — Supply Chain Dashboard</h1>
-  <p>Powered by Gemini 1.5 Flash on Google Cloud · Auto-refreshes every 20s | CI/CD Pipeline Active | CI/CD Pipeline Active</p>
+  <p>Powered by Gemini 2.0 Flash on Google Cloud · Auto-refreshes every 20s | CI/CD Pipeline Active | CI/CD Pipeline Active</p>
 </div>
 <div class="container">
 {% if shipments %}
