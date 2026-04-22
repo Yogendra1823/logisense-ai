@@ -10,3 +10,6 @@ steps:
           --allow-unauthenticated \
           --project $PROJECT_ID \
           --quiet
+logsBucket: 'gs://supply-chain-491404_cloudbuild'
+options:
+  logging: GCS_ONLY
