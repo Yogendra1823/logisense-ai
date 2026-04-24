@@ -279,7 +279,7 @@ def index():
         db = firestore.Client()
         docs = list(db.collection("shipments").stream())
         shipments = [d.to_dict() for d in docs]
-        shipments.sort(key=lambda x: x.get('risk_score', 0), reverse=True)
+        shipments.sort(key=lambda x: x.get("shipment_id", ""))
         critical_count = sum(1 for s in shipments if s.get('risk_score',0) > 90)
         high_count = sum(1 for s in shipments if 70 < s.get('risk_score',0) <= 90)
         medium_count = sum(1 for s in shipments if 40 < s.get('risk_score',0) <= 70)
